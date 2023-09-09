@@ -16,6 +16,15 @@
   --sectionPadding: 6rem 0;
 
   --itemBorderRadius: 0.7rem;
+
+  /* my prefered style */
+  --myBackgroundColor: #004643;
+  --myHeadlineColor: #fffffe;
+  --myParagrafColor: #abd1c6;
+  --myButtonColor: #f9bc60;
+  --mySecondaryColor: #abd1c6;
+  --myTertaryColor: #e16162;
+  --myMainColor: #e8e4e6;
 }
 
 * {
@@ -25,17 +34,8 @@
 }
 
 body {
-  font-family: var(--fontComingSoon);
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-  color: var(--primaryTextColor);
+  font-family: var(--fontNunito);
+  background-color: var(--myBackgroundColor);
 }
 
 p {
@@ -43,17 +43,12 @@ p {
   line-height: 1.9rem;
 }
 
-p,
-span,
-label,
-input,
-texarea,
-li {
-  color: var(--secondaryTextColor);
-}
-
 a {
   text-decoration: none;
+}
+
+main {
+  color: var(--myHeadlineColor);
 }
 
 .main-container {
@@ -66,7 +61,24 @@ a {
     width: 90%;
   }
 }
+/* button style */
+.btn {
+  padding: 0.5rem 3rem;
+  border-radius: 999px;
+  background-color: var(--myButtonColor);
+  color: var(--myBackgroundColor);
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+  margin-top: 50px;
+}
 
+.btn:hover {
+  /* box-shadow: var(--borderColor) 0px 1px 5px; */
+  color: var(--borderColor);
+}
+
+/* main style */
 .main-container .nav {
   display: flex;
   justify-content: space-between;
@@ -77,8 +89,143 @@ a {
   list-style: none;
   display: flex;
   gap: 3rem;
+  font-weight: 600;
 }
 
-.nav ul li {
-  color: #232e35;
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.logo a {
+  color: var(--myHeadlineColor);
+}
+
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a {
+  color: var(--myMainColor);
+}
+
+nav ul li a:hover {
+  color: var(--myButtonColor);
+  font-weight: bold;
+}
+
+.burger div {
+  width: 25px;
+  height: 2px;
+  background-color: var(--myButtonColor);
+  margin: 7px;
+  transition: all 0.3s;
+  z-index: 99;
+}
+
+.burger {
+  /* display: none; */
+  z-index: 99;
+  position: fixed;
+  top: 33px;
+  right: 35px;
+}
+
+section {
+  height: 100vh;
+}
+
+#hero {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  width: 1200px;
+  margin: 0 auto;
+  color: var(--myParagrafColor);
+}
+
+#hero h1 {
+  color: var(--myHeadlineColor);
+}
+
+.pre-title {
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  position: relative;
+  width: fit-content;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 1rem;
+}
+
+.hero-name span {
+  color: var(--myButtonColor);
+}
+
+.hero-right img {
+  width: 98%;
+}
+
+.hero-right {
+  display: flex;
+  justify-content: center;
+}
+
+/* service */
+#services {
+  color: var(--myBackgroundColor);
+  background-color: var(--mySecondaryColor);
+  padding: var(--sectionPadding);
+}
+
+.services .pre-title {
+  margin: 20px auto;
+  color: var(--borderColor);
+}
+
+.services-title {
+  text-align: center;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 3rem;
+}
+
+.service {
+  padding: 3rem 3rem;
+  text-align: center;
+  background-color: var(--myBackgroundColor);
+  margin-top: 50px;
+  color: var(--myParagrafColor);
+  border-radius: var(--itemBorderRadius);
+}
+.service:hover {
+  box-shadow: var(--primaryTextColor) 0px 1px 5px;
+}
+
+.service h4 {
+  color: var(--myHeadlineColor);
+  margin: 1.5rem 0;
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.service-icon {
+  background: var(--myHeadlineColor);
+  color: #56211e;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 1rem 1.3rem;
+  border-radius: 0.5rem;
 }

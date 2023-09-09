@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gabriel Yonathan - Software Enginer</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -18,15 +22,10 @@
 
           <nav>
             <ul>
-              <li><a href="#service">Services</a></li>
-              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#portfolios">Portfolio</a></li>
               <li><a href="#skill">Skills</a></li>
               <li><a href="#contact">Contact</a></li>
-              <li>
-                <a href="/resume.pdf" target="_blank">
-                  <button class="btn">My CV</button>
-                </a>
-              </li>
             </ul>
           </nav>
 
@@ -40,5 +39,143 @@
       </div>
     </header>
     <!-- End Header -->
+
+    <main>
+      <!-- Section Hero -->
+      <section id="hero">
+        <div class="hero-left">
+          <h1 class="hero-name">Gabriel <span>Yonathan</span></h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            perspiciatis eaque praesentium recusandae fugit illum. Non minus
+            odio architecto tempore. Voluptates quo, quam accusantium
+            praesentium ut tempore facere animi consequatur.
+          </p>
+          <a href="/resume.pdf" target="_blank">
+            <button class="btn">My CV</button>
+          </a>
+        </div>
+        <div class="hero-right">
+          <img src="./img/sapiens.svg" alt="images" />
+        </div>
+      </section>
+
+      <!-- Section Service -->
+      <section id="services">
+        <div class="services main-container">
+          <h3 class="pre-title">Services</h3>
+          <h1 class="section-title services-title">Specialized In</h1>
+          <div class="grid-3">
+            <!-- Service Cloud Enginer -->
+            <article class="service">
+              <div class="service-icon">
+                <span class="material-symbols-outlined"> cloud </span>
+              </div>
+              <h4>Cloud Enginer</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <!-- Service Frontend Developer -->
+            <article class="service">
+              <div class="service-icon">
+                <span class="material-symbols-outlined"> desktop_windows </span>
+              </div>
+              <h4>Frontend Developer</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <!-- Service Backend Developer -->
+            <article class="service">
+              <div class="service-icon">
+                <span class="material-symbols-outlined"> database </span>
+              </div>
+              <h4>Backend Developer</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End Section -->
+
+      <!-- Section Portfolio -->
+      <section id="portfolios">
+        <div class="portoflios main-container">
+          <h3 class="pre-title">My Works</h3>
+          <h1 class="section-title">Featured Portfolios</h1>
+          <div class="grid-3">
+            <article class="portfolio">
+              <div class="portfolio-cover">
+                <img src="./img/portfolio/port-1.jpg" alt="image" />
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-title">
+                  <h4>Service RESTful API Book</h4>
+                  <a href="/" class="portfolio-link">
+                    <span class="material-symbols-outlined"> open_in_new </span>
+                  </a>
+                </div>
+                <div class="portfolio-tags">
+                  <div>Express JS</div>
+                  <div>My SQL</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque eos cupiditate nam doloribus accusantium esse
+                  consequuntur facere quam ea? Voluptate, odio! Perferendis,
+                  quaerat ad? Modi illum temporibus ullam nesciunt excepturi.
+                </p>
+              </div>
+            </article>
+
+            <article class="portfolio">
+              <div class="portfolio-cover">
+                <img src="./img/portfolio/port-2.jpg" alt="image" />
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-title">
+                  <h4>Service RESTful API Book</h4>
+                  <a href="/" class="portfolio-link">
+                    <span class="material-symbols-outlined"> open_in_new </span>
+                  </a>
+                </div>
+                <div class="portfolio-tags">
+                  <div>Express JS</div>
+                  <div>My SQL</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque eos cupiditate nam doloribus accusantium esse
+                  consequuntur facere quam ea? Voluptate, odio! Perferendis,
+                  quaerat ad? Modi illum temporibus ullam nesciunt excepturi.
+                </p>
+              </div>
+            </article>
+
+            <article class="portfolio">
+              <div class="portfolio-cover">
+                <img src="./img/portfolio/port-3.jpg" alt="image" />
+              </div>
+              <div class="portfolio-info">
+                <div class="portfolio-title">
+                  <h4>Service RESTful API Book</h4>
+                  <a href="/" class="portfolio-link">
+                    <span class="material-symbols-outlined"> open_in_new </span>
+                  </a>
+                </div>
+                <div class="portfolio-tags">
+                  <div>Express JS</div>
+                  <div>My SQL</div>
+                </div>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Doloremque eos cupiditate nam doloribus accusantium esse
+                  consequuntur facere quam ea? Voluptate, odio! Perferendis,
+                  quaerat ad? Modi illum temporibus ullam nesciunt excepturi.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- End Section Portfolio -->
+    </main>
   </body>
 </html>
